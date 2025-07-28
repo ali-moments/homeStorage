@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import constants
+import nas.constants as constants
 
 urlpatterns = [
     path(constants.DJANGO_ADMIN_PANEL_URL, admin.site.urls),
