@@ -1,14 +1,178 @@
-.architect
-bootstrap.css
-bootstrap.js
-bootstrap.json
-bootstrap.jsonp
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media/
+.env
+.DS_Store
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node/React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.frontend/.env
+.frontend/.eslintcache
+.frontend/build/
+.frontend/coverage/
+
+# Testing
+.coverage
+htmlcov/
+
+# Database
+*.dump
+*.backup
+
+# Docker
+*.env
+docker-compose.override.yml
+
+# macOS
+.DS_Store
+
+# Backend static files
+backend/static/
+
+# Frontend build files
+frontend/build/
+frontend/.cache/
+frontend/dist/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# PyCharm
+.idea/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
 build/
-classic.json
-classic.jsonp
-ext/
-modern.json
-modern.jsonp
-resources/sass/.sass-cache/
-resources/.arch-internal-preview.css
-.arch-internal-preview.css
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Frontend dependencies
+frontend/node_modules/
+frontend/.npm
+frontend/.eslintcache
+frontend/yarn.lock
+frontend/package-lock.json
+
+# Frontend build
+frontend/build/
+frontend/.next/
+frontend/out/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development
+*.local
+
+# Production
+frontend/.env.production
+frontend/.env.local
+frontend/.env.development
+
+
