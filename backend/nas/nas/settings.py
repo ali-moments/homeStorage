@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import constants
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*0wj5r016%dm4b37a(3++==++n11s(udiw8_sya1#vyv%!en8f'
+SECRET_KEY = constants.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = constants.DEBUG
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = constants.ALLOWED_HOSTS
 
 
 # Application definition
@@ -120,17 +121,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = ''
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# CORS settings (for React development)
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
 
 # REST FRAMEWORK settings
 REST_FRAMEWORK = {
@@ -138,4 +134,10 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ]
 }
+
+# CORS and CSRF settings for React
+CORS_ALLOWED_ORIGINS = constants.CORS_ALLOWED_ORIGINS
+CORS_ALLOW_CREDENTIALS = constants.CORS_ALLOW_CREDENTIALS
+CSRF_TRUSTED_ORIGINS = constants.CSRF_TRUSTED_ORIGINS
+
 

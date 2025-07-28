@@ -175,4 +175,4 @@ frontend/.env.production
 frontend/.env.local
 frontend/.env.development
 
-
+constants.py
