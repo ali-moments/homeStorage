@@ -19,3 +19,5 @@ CSRF_TRUSTED_ORIGINS:Final = [
     "http://localhost:3000",
     "http://yourdomain"
 ]
+
+DJANGO_ADMIN_PANEL_URL:Final = "secret-admin/"
